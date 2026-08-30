@@ -1,0 +1,40 @@
+generated: '2026-08-30'
+method: probed
+source: live probes of https://www.truebinding.com/.well-known/*
+note: >-
+  Every /.well-known/ path probed on the only host TrueBinding operates returned HTTP 404.
+  No document was served and nothing was saved, so NO WellKnown or SecurityTxt pointer is
+  emitted for this provider - this file records a verified absence, not a presence. The host
+  is a Squarespace marketing site and is not a soft-404 catch-all: an unregistered control
+  path also returned 404, so the 404s above are genuine misses rather than a catch-all
+  masking a served surface.
+hit_count: 0
+hosts:
+- host: https://www.truebinding.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+soft_404_control:
+  path: /.well-known/api-evangelist-control-probe
+  status: 404
+  bytes: 145637
+  verdict: not-a-catch-all

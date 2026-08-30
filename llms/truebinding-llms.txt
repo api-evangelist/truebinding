@@ -1,0 +1,59 @@
+# TrueBinding
+
+> TrueBinding, Inc. is a clinical-stage biotherapeutic company in Santa Clara, California, founded
+> in 2016. It develops humanized monoclonal antibodies against Galectin-3 - led by TB006, in
+> clinical development for Alzheimer's and Parkinson's disease - and sells cGMP contract
+> development and manufacturing (CDMO) services from its own Santa Clara facility.
+
+## Important for agents
+
+- **TrueBinding publishes no API.** As of 2026-08-30 there is no public API, SDK, developer portal,
+  OpenAPI/AsyncAPI/GraphQL contract, MCP server, or A2A agent card on any TrueBinding host.
+  `api.truebinding.com`, `docs.truebinding.com` and `developer.truebinding.com` do not resolve.
+- Every `/.well-known/` discovery path on `www.truebinding.com` returns HTTP 404.
+- `https://www.truebinding.com/robots.txt` disallows a broad set of AI crawlers, including
+  `anthropic-ai`, `ClaudeBot`, `GPTBot`, `CCBot`, `Google-Extended`, `Bytespider`,
+  `Meta-ExternalAgent`, `Applebot-Extended` and `Amazonbot`. Honor it.
+- The site is a Squarespace marketing and patient-access site; the paths under `/api/` named in
+  robots.txt belong to the Squarespace platform, not to TrueBinding.
+
+## Company
+
+- [TrueBinding](https://www.truebinding.com/): Company home.
+- [Our Science](https://www.truebinding.com/truebinding/science): Galectin-3 biology and mechanism.
+- [Pipeline](https://www.truebinding.com/pipeline-1): Programs and clinical stage.
+- [Management](https://www.truebinding.com/truebinding/management): Leadership team.
+- [News](https://www.truebinding.com/truebinding/news): Company announcements.
+- [Column](https://www.truebinding.com/column): Blog.
+
+## Clinical access
+
+- [Clinical Trial](https://www.truebinding.com/clinical-trial): Trial information.
+- [Parkinson's Trial](https://www.truebinding.com/parkinsons-trial)
+- [Expanded Access](https://www.truebinding.com/expanded-access): US expanded access program.
+- [Global Early Access](https://www.truebinding.com/global-partnership)
+
+## CDMO services
+
+- [Services Overview](https://www.truebinding.com/services-overview)
+- [Antibody Development](https://www.truebinding.com/antibody-development)
+- [Research and Development](https://www.truebinding.com/research-development)
+- [cGMP Manufacturing](https://www.truebinding.com/gmp-mfg)
+- [Vivarium Services](https://www.truebinding.com/vivarium-services)
+- [Histology and Imaging](https://www.truebinding.com/histology-imaging)
+- [Drug Product Logistics](https://www.truebinding.com/dp-logistics)
+- [cGMP Training and Audit](https://www.truebinding.com/training-audit)
+
+## Contact and policies
+
+- [General Inquiry](https://www.truebinding.com/general-inquiry-page)
+- [Privacy Policy](https://www.truebinding.com/privacy-policy)
+- [Terms and Conditions](https://www.truebinding.com/term-and-condition)
+
+## Optional
+
+- [API Evangelist profile](https://raw.githubusercontent.com/api-evangelist/truebinding/refs/heads/main/apis.yml): This company's apis.json profile.
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/truebinding/refs/heads/main/security/truebinding-domain-security.yml)
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/truebinding/refs/heads/main/well-known/truebinding-well-known.yml)
+
+<!-- generated: 2026-08-30 | method: generated | source: apis.yml + repo artifacts + probed truebinding.com sitemap -->

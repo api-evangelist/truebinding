@@ -1,10 +1,23 @@
 aid: truebinding
 name: TrueBinding
-description: 'TrueBinding is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  TrueBinding, Inc. is a clinical-stage biotherapeutic company founded in 2016 and headquartered
+  at 4701 Patrick Henry Drive, Santa Clara, California. It develops humanized monoclonal antibodies
+  against Galectin-3 to resolve chronic inflammation ("inflammaging"), led by TB006, which has
+  completed Phase 1b/2a work in Alzheimer's disease and holds an FDA IND clearance for a Phase 2A
+  trial in Parkinson's disease, with additional research programs across ALS, glioblastoma, autism
+  spectrum, stroke, metabolic disease and oncology. Alongside its own pipeline the company sells
+  contract development and manufacturing (CDMO) services from its Santa Clara facility - antibody
+  discovery, cell-line and process development, cGMP monoclonal antibody and media/buffer
+  manufacturing, vivarium and toxicology studies, histology and imaging, clinical drug product
+  logistics, and cGMP training and audit preparation. TrueBinding ships no software product and
+  publishes no public API, SDK, developer portal or machine-readable API contract; its web presence
+  is a Squarespace marketing and patient-access site.
 url: https://raw.githubusercontent.com/api-evangelist/truebinding/refs/heads/main/apis.yml
+image: https://images.squarespace-cdn.com/content/6118e5173909f118e816918e/6f42f3e6-5cbc-4557-960f-86f82b6cd3cd/Logo_Final_OL_082121-01.png?format=2500w&content-type=image%2Fpng
 x-type: company
 x-source: harvest:secondary-market
+x-secondary-market-listing: https://forgeglobal.com/truebinding_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +25,16 @@ created: '2026-08-30'
 modified: '2026-08-30'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Clinical Trials
+- Drug Discovery
+- Monoclonal Antibodies
+- Neurodegenerative Disease
+- CDMO
+- Contract Manufacturing
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +42,40 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/truebinding-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/truebinding_stock/
+  url: https://www.truebinding.com/
+- type: Support
+  url: https://www.truebinding.com/general-inquiry-page
+- type: Blog
+  url: https://www.truebinding.com/column
+- type: PrivacyPolicy
+  url: https://www.truebinding.com/privacy-policy
+- type: TermsOfService
+  url: https://www.truebinding.com/term-and-condition
+- type: LLMsTxt
+  url: llms/truebinding-llms.txt
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    TrueBinding is a clinical-stage antibody biotherapeutics company and cGMP CDMO whose only web
+    presence is a 67-page Squarespace marketing and patient-access site - api., docs. and developer.
+    truebinding.com do not resolve at all, and every OpenAPI, GraphQL, MCP and A2A discovery path
+    probed on www.truebinding.com returned 404.
+  evidence:
+  - url: https://www.truebinding.com/openapi.json
+    status: 404
+  - url: https://www.truebinding.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.truebinding.com/
+    status: 0
+  - url: https://www.truebinding.com/services-overview
+    status: 200
+  checked: '2026-08-30'

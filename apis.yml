@@ -14,6 +14,18 @@ description: >-
   publishes no public API, SDK, developer portal or machine-readable API contract; its web presence
   is a Squarespace marketing and patient-access site.
 url: https://raw.githubusercontent.com/api-evangelist/truebinding/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://images.squarespace-cdn.com/content/6118e5173909f118e816918e/6f42f3e6-5cbc-4557-960f-86f82b6cd3cd/Logo_Final_OL_082121-01.png?format=2500w&content-type=image%2Fpng
 x-type: company
 x-source: harvest:secondary-market
